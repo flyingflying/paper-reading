@@ -93,7 +93,7 @@ class TestTriggerDetection(nn.Module):
             input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
             return_dict=False, output_attentions=True
         )
-        all_embeddings = all_embeddings * attention_mask.unsqueeze(-1)  # 这一步我觉得是没有必要的
+        all_embeddings = all_embeddings * attention_mask.unsqueeze(-1)  # 为后面计算 cos_sim 做准备
 
         # ## step4: 分别拿到句子的 token 编码和事件的 token 编码
         sentn_embeddings = self.get_sub_embeddings(all_embeddings, sentn_mask)  # [batch_size, n_sentn_tokens, hidden_size]
@@ -111,6 +111,7 @@ class TestTriggerDetection(nn.Module):
             event_embeddings.unsqueeze(1),
             dim=-1
         )  # [n_sentn_tokens, n_event_tokens]
+        # 这里不需要 attention_mask, 两个 全零向量 的 cosine 相似度就是 0
         sentn_event_embeddings = torch.matmul(cos_sim, event_embeddings)  # [batch_size, n_sentn_tokens, hidden_size]
         
         # ## step7: 融入 pos one hot 向量的信息, 这里用的是 one-hot encoding 的方式, 不是 embedding 的方式

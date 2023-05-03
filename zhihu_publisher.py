@@ -60,7 +60,7 @@ def convert_line(source_line: str):
     return source_line.replace("$", "$$")
 
 
-if __name__ == "__main__":
+def main():
     root_dir = os.path.abspath("./")
     
     for dirpath, dirnames, filenames in os.walk(root_dir):
@@ -85,3 +85,7 @@ if __name__ == "__main__":
                 print(f"开始转化 {source_file_path} 文件 ... ")
                 convert_file(source_file_path, target_file_path)
                 print(f"{source_file_path} 文件转换完成")
+
+
+if __name__ == "__main__":
+    convert_file("./document_event_extraction/overview.md", "./document_event_extraction/overview.zhihu.md")

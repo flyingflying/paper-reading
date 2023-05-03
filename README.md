@@ -6,18 +6,15 @@
 ## 事件抽取
 
 1. Query and Extract: Refining Event Extraction as Type Oriented Binary Decoding
-   + [论文](https://arxiv.org/abs/2110.07476)
-   + [笔记](./event_extraction/Query_and_Extract/overview.md)
-   + [知乎](https://zhuanlan.zhihu.com/p/616757293)
 
-2. Exploring Pre-trained Language Models for Event Extraction and Generation
-   + [论文](https://aclanthology.org/P19-1522.pdf)
-   + [笔记](./event_extraction/PLMEE/overview.md)
+## 篇章级事件抽取
 
-3. CasEE: A Joint Learning Framework with Cascade Decoding for Overlapping Event Extraction
-   + [论文](https://aclanthology.org/2021.findings-acl.14/)
-   + [笔记](./event_extraction/CasEE/overview.md)
+1. DCFEE: A Document-level Chinese Financial Event Extraction System based on Automatically Labeled Training Data
+2. Doc2EDAG: An End-to-End Document-level Framework for Chinese Financial Event Extraction
+3. Document-level Event Extraction via Heterogeneous Graph-based Interaction Model with a Tracker
+4. Efficient Document-level Event Extraction via Pseudo-Trigger-aware Pruned Complete Graph
+5. Document-level Event Extraction via Parallel Prediction Networks
 
-4. OneEE: A One-Stage Framework for Fast Overlapping and Nested Event Extraction
-   + [论文](https://arxiv.org/abs/2209.02693)
-   + [笔记](./event_extraction/OneEE/overview.md)
+## 大语言模型相关 v1
+
+1. LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale

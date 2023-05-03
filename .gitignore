@@ -163,6 +163,7 @@ cython_debug/
 *.jsonl
 *.json 
 
-# 未完成的部分
-event_extraction/CasEE/
-event_extraction/OneEE/
+# 未完成的内容
+event_extraction/CasEE
+event_extraction/OneEE
+event_extraction/PLMEE
