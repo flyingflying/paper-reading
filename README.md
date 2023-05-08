@@ -18,3 +18,4 @@
 ## 大语言模型相关 v1
 
 1. LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale
+2. LoRA: Low-Rank Adaptation of Large Language Models
