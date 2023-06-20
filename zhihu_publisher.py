@@ -87,5 +87,8 @@ def main():
                 print(f"{source_file_path} 文件转换完成")
 
 
-if __name__ == "__main__":
-    convert_file("./document_event_extraction/overview.md", "./document_event_extraction/overview.zhihu.md")
+if __name__ == "__main__":    
+    convert_file(
+        "./large-language-model-v1/RLHF/overview.md",
+        "./large-language-model-v1/RLHF/overview.zhihu.md"
+    )
