@@ -19,3 +19,4 @@
 
 1. LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale
 2. LoRA: Low-Rank Adaptation of Large Language Models
+3. InstructGPT: Training language models to follow instructions with human feedback
