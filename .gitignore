@@ -159,6 +159,8 @@ cython_debug/
 
 *.zhihu.md 
 
+*.not_upload.*
+
 # 数据文件
 *.jsonl
 *.json 
@@ -169,3 +171,6 @@ event_extraction/OneEE
 event_extraction/PLMEE
 
 basic-knowledge-v2/sort
+
+large-language-model-v1/chatgpt
+large-language-model-v1/FlashAttention
