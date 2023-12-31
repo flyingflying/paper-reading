@@ -166,15 +166,6 @@ cython_debug/
 *.json 
 
 # 未完成的内容
-event_extraction/CasEE
-event_extraction/OneEE
-event_extraction/PLMEE
-
-basic-knowledge-v2/sort
-
 large-language-model-v1/chatgpt
-large-language-model-v1/FlashAttention
-
-todo.md
 
 grad_project

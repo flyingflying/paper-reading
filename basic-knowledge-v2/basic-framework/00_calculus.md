@@ -81,6 +81,12 @@ $$
 
 对于 二维时间 概念的最大问题是测量尺度的问题。对于空间来说, 我们可以统一用长度来衡量每一个维度, 但是对于时间来说, 我们可以用 秒, 小时这样的单位来衡量两个时间线之间的距离吗? 不同 **时间线** 怎么整合成一个 **时间面** 呢?
 
+## cache
+
+其中, sigmoid 函数是 [单位阶跃函数](https://en.wikipedia.org/wiki/Heaviside_step_function) 的光滑近似函数, 同时 tanh 函数是 [sign 符号函数](https://en.wikipedia.org/wiki/Sign_function) 的光滑近似函数, 两者同属于 饱和 (saturated) 激活函数 (有最大值); 而 ReLU 属于 非饱和 (non-saturated) 激活函数 (没有最大值)。
+
++ [神经网络中的权重初始化一览：从基础到Kaiming](https://zhuanlan.zhihu.com/p/62850258)
+
 ## 引用
 
 知识体系:

@@ -88,7 +88,11 @@ def main():
 
 
 if __name__ == "__main__":    
+    # convert_file(
+    #     "./large-language-model-v1/RLHF/overview.md",
+    #     "./large-language-model-v1/RLHF/overview.zhihu.md"
+    # )
     convert_file(
-        "./large-language-model-v1/RLHF/overview.md",
-        "./large-language-model-v1/RLHF/overview.zhihu.md"
+        "./basic-knowledge-v2/basic-framework/02_backward.md",
+        "./basic-knowledge-v2/basic-framework/02_backward.zhihu.md",
     )
